@@ -22,4 +22,17 @@ public class QuestionRepositoryTest {
         assertNotNull(questions);
         assertEquals(4, questions.size());
     }
+
+    @Test
+    public void getAnswers_should_return_Answers(){
+        // given
+        StaticQuestionRepository questionRepository = new StaticQuestionRepository();
+
+        // when
+        List<String> answers = questionRepository.getAnswers();
+
+        // then
+        assertNotNull(answers);
+        assertEquals(4, answers.size());
+    }
 }

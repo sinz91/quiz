@@ -7,4 +7,5 @@ import java.util.List;
  */
 public interface QuestionRepository {
     List<String> findAll();
+    List<String> getAnswers();
 }
